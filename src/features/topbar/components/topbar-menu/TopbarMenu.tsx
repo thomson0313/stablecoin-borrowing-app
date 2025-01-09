@@ -31,14 +31,14 @@ export interface TopbarMenuProps {
 export function TopbarMenu({
   isInSandbox,
   onSandboxModeClick,
-  buildInfo,
+  // buildInfo,
   isMobileDisplay,
   rewardsInfo,
   airdropInfo,
 }: TopbarMenuProps) {
   const [open, setOpen] = useState(false)
 
-  const { sha = 'n/a', buildTime = 'n/a' } = buildInfo
+  // const { sha = 'n/a', buildTime = 'n/a' } = buildInfo
 
   const triggerButton = <IconButton icon={MenuIcon} variant="tertiary" size="m" />
 
@@ -78,14 +78,14 @@ export function TopbarMenu({
             </Link>
           </MenuItem>
 
-          <Link
+          {/* <Link
             to={links.github}
             variant="unstyled"
             external
             className="typography-label-4 bg-secondary p-6 text-center text-secondary"
           >
             Built from {sha} at {buildTime}
-          </Link>
+          </Link> */}
         </DialogContent>
       </Dialog>
     )
@@ -123,14 +123,14 @@ export function TopbarMenu({
           </Link>
         </DropdownMenuItem>
 
-        <Link
+        {/* <Link
           to={links.github}
           variant="unstyled"
           external
           className="typography-label-4 p-5 text-center text-secondary"
         >
           Built from {sha} at {buildTime}
-        </Link>
+        </Link> */}
       </DropdownMenuContent>
     </DropdownMenu>
   )

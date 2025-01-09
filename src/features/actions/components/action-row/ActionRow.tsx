@@ -9,8 +9,7 @@ import { IconStack } from '@/ui/molecules/icon-stack/IconStack'
 import { cn } from '@/ui/utils/style'
 import { testIds } from '@/ui/utils/testIds'
 import { useIsTruncated } from '@/ui/utils/useIsTruncated'
-import { assert } from '@/utils/assert'
-import { NormalizedUnitNumber } from '@marsfoundation/common-universal'
+import { assert, NormalizedUnitNumber } from '@marsfoundation/common-universal'
 import { cva } from 'class-variance-authority'
 import { ComponentType, ReactNode, createContext, useContext } from 'react'
 import { ActionHandlerState } from '../../logic/types'
@@ -89,7 +88,7 @@ function Title({ children }: { children: ReactNode }) {
     <HorizontalScroll
       className={cn(
         'typography-label-2 col-span-2 flex items-center gap-1.5',
-        'md:col-span-1 sm:overflow-visible',
+        'sm:overflow-visible md:col-span-1',
         actionHandlerState.status === 'success' && 'text-secondary',
       )}
     >

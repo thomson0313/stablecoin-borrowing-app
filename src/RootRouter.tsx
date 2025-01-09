@@ -1,7 +1,7 @@
 import { RouteObject, createBrowserRouter, redirect } from 'react-router-dom'
 
 import { Path, paths } from './config/paths'
-import { RouterErrorFallback } from './features/errors/RouterErrorFallback'
+import { RouterErrorFallback } from './features/errors'
 import { NotFound } from './features/errors/NotFound'
 import { EasyBorrowPage } from './pages/Borrow'
 import { FarmDetails } from './pages/FarmDetails'

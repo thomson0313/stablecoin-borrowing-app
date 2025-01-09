@@ -1,8 +1,6 @@
-import { assert } from '@/utils/assert'
+import { assert, BaseUnitNumber, CheckedAddress, NormalizedUnitNumber } from '@marsfoundation/common-universal'
 import BigNumber from 'bignumber.js'
 import { zeroAddress } from 'viem'
-
-import { BaseUnitNumber, CheckedAddress, NormalizedUnitNumber } from '@marsfoundation/common-universal'
 import { findSignificantPrecision } from '../common/format'
 import { TokenSymbol } from './TokenSymbol'
 
@@ -93,12 +91,11 @@ export class Token {
   }
 
   public toBaseUnit(value: NormalizedUnitNumber): BaseUnitNumber {
-    const normalizedValue = NormalizedUnitNumber(value.decimalPlaces(this.decimals, BigNumber.ROUND_DOWN))
-    return BaseUnitNumber(normalizedValue.shiftedBy(this.decimals))
+    return NormalizedUnitNumber.toBaseUnit(value, this.decimals)
   }
 
   public fromBaseUnit(value: BaseUnitNumber): NormalizedUnitNumber {
-    return NormalizedUnitNumber(value.shiftedBy(-this.decimals))
+    return BaseUnitNumber.toNormalizedUnit(value, this.decimals)
   }
 
   public toUSD(value: NormalizedUnitNumber): NormalizedUnitNumber {

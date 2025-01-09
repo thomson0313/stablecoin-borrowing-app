@@ -11,37 +11,37 @@ import { rootRouter } from './RootRouter'
 import { queryClient } from './config/query-client'
 // import { useViteErrorOverlay } from './domain/errors/useViteErrorOverlay'
 import { useStore } from './domain/state'
-// import { useAutoConnect } from './domain/wallet/useAutoConnect'
+import { useAutoConnect } from './domain/wallet/useAutoConnect'
 import { TooltipProvider } from './ui/atoms/tooltip/Tooltip'
 
 function App() {
-	const sandboxNetwork = useStore((state) => state.sandbox.network)
-	const config = getConfig(sandboxNetwork)
-	// if (import.meta.env.VITE_PLAYWRIGHT === '1' || import.meta.env.MODE === 'development') {
-	// 	// biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
-	// 	useAutoConnect({ config })
-	// }
-	// if (import.meta.env.MODE === 'development') {
-	// 	// biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
-	// 	useViteErrorOverlay()
-	// }
+  const sandboxNetwork = useStore((state) => state.sandbox.network)
+  const config = getConfig(sandboxNetwork)
+  if (import.meta.env.VITE_PLAYWRIGHT === '1' || import.meta.env.MODE === 'development') {
+    // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
+    useAutoConnect({ config })
+  }
+  if (import.meta.env.MODE === 'development') {
+    // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
+    // useViteErrorOverlay()
+  }
 
-	return (
-		<WagmiProvider config={config}>
-			<QueryClientProvider client={queryClient}>
-				<RainbowKitProvider
-					theme={lightTheme({
-						accentColor: '#3E64EF',
-						borderRadius: 'medium',
-					})}
-				>
-					<TooltipProvider delayDuration={0}>
-						<RouterProvider router={rootRouter} />
-					</TooltipProvider>
-				</RainbowKitProvider>
-			</QueryClientProvider>
-		</WagmiProvider>
-	)
+  return (
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}>
+        <RainbowKitProvider
+          theme={lightTheme({
+            accentColor: '#3E64EF',
+            borderRadius: 'medium',
+          })}
+        >
+          <TooltipProvider delayDuration={0}>
+            <RouterProvider router={rootRouter} />
+          </TooltipProvider>
+        </RainbowKitProvider>
+      </QueryClientProvider>
+    </WagmiProvider>
+  )
 }
 
 export default App

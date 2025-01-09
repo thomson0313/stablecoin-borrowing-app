@@ -1,9 +1,9 @@
 import { NormalizedUnitNumber } from '@marsfoundation/common-universal'
 
 import { getDefaultAppConfig } from './appConfig.default'
-// import { getTestingAppConfig } from './appConfig.testing'
+import { getTestingAppConfig } from './appConfig.testing'
 
-export const getAppConfig = import.meta.env.MODE === 'test' ? getDefaultAppConfig : getDefaultAppConfig
+export const getAppConfig = import.meta.env.MODE === 'test' ? getTestingAppConfig : getDefaultAppConfig
 
 /**
  * @note: Do not use config data to check for feature availability. Use import.meta.env instead to make dead code elimination work.

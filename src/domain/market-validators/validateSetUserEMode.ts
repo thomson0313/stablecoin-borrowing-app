@@ -1,8 +1,5 @@
+import { NormalizedUnitNumber, Percentage, raise } from '@marsfoundation/common-universal'
 import BigNumber from 'bignumber.js'
-
-import { raise } from '@/utils/assert'
-
-import { NormalizedUnitNumber, Percentage } from '@marsfoundation/common-universal'
 import { MarketInfo } from '../market-info/marketInfo'
 
 export interface ValidateSetUserEModeParams {
@@ -67,8 +64,8 @@ export function getValidateSetUserEModeArgs({
   const liquidationThreshold =
     requestedEModeCategoryId === 0
       ? undefined
-      : marketInfo.emodeCategories[requestedEModeCategoryId]?.liquidationThreshold ??
-        raise('Requested eMode category not found')
+      : (marketInfo.emodeCategories[requestedEModeCategoryId]?.liquidationThreshold ??
+        raise('Requested eMode category not found'))
 
   const userEModeCategoryId = marketInfo.userConfiguration.eModeState.enabled
     ? marketInfo.userConfiguration.eModeState.category.id

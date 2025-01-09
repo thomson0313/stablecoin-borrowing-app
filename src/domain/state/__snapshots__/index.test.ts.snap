@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`initializes store 1`] = `
+{
+  "actionsSettings": {
+    "exchangeMaxSlippage": "0.001",
+    "preferPermits": true,
+    "setExchangeMaxSlippage": [Function],
+    "setPreferPermits": [Function],
+  },
+  "analytics": {
+    "accepted": undefined,
+    "setAccepted": [Function],
+  },
+  "appConfig": {
+    "sandbox": undefined,
+  },
+  "bannersVisibility": {
+    "bannerVisibilityStatus": {},
+    "closeBanner": [Function],
+  },
+  "compliance": {
+    "addAgreedToToSAddress": [Function],
+    "agreedToToSAdresses": [],
+  },
+  "dialogs": {
+    "closeDialog": [Function],
+    "openDialog": [Function],
+    "openedDialog": undefined,
+  },
+  "sandbox": {
+    "network": undefined,
+    "setNetwork": [Function],
+  },
+  "savings": {
+    "confirmedWelcomeDialog": false,
+    "setConfirmedWelcomeDialog": [Function],
+  },
+}
+`;
+
+exports[`persists state 1`] = `
+{
+  "state": {
+    "actionsSettings": {
+      "exchangeMaxSlippage": "0.001",
+      "preferPermits": true,
+    },
+    "analytics": {},
+    "bannersVisibility": {
+      "bannerVisibilityStatus": {},
+    },
+    "compliance": {
+      "agreedToToSAdresses": [],
+    },
+    "sandbox": {},
+    "savings": {
+      "confirmedWelcomeDialog": false,
+    },
+  },
+  "version": 2,
+}
+`;

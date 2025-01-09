@@ -13,9 +13,8 @@ import {
 } from '@/features/dialogs/common/logic/transfer-from-user/form'
 import { getTransferFromUserFormValidator } from '@/features/dialogs/common/logic/transfer-from-user/validation'
 import { FormFieldsForDialog, PageState, PageStatus } from '@/features/dialogs/common/types'
-import { assert, raise } from '@/utils/assert'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { NormalizedUnitNumber } from '@marsfoundation/common-universal'
+import { assert, NormalizedUnitNumber, raise } from '@marsfoundation/common-universal'
 import { useState } from 'react'
 import { UseFormReturn, useForm } from 'react-hook-form'
 import { useChainId } from 'wagmi'
@@ -87,7 +86,7 @@ export function useStakeDialog({ farm, initialToken }: UseStakeDialogParams): Us
 
   const stakingTokenRouteItem =
     txOverview.status === 'success'
-      ? txOverview.routeToStakingToken.at(-1) ?? raise('Route should be defined')
+      ? (txOverview.routeToStakingToken.at(-1) ?? raise('Route should be defined'))
       : undefined
   const stakedToken = {
     token: farm.stakingToken,

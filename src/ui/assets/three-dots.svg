@@ -1,1 +1,33 @@
-export default "data:image/svg+xml,%3c!--%20By%20Sam%20Herbert%20(@sherb),%20for%20everyone.%20More%20@%20http://goo.gl/7AJzbL%20--%3e%3csvg%20width='120'%20height='30'%20viewBox='0%200%20120%2030'%20xmlns='http://www.w3.org/2000/svg'%20fill='%236A7692'%3e%3ccircle%20cx='15'%20cy='15'%20r='15'%3e%3canimate%20attributeName='r'%20from='15'%20to='15'%20begin='0s'%20dur='0.8s'%20values='15;9;15'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3canimate%20attributeName='fill-opacity'%20from='1'%20to='1'%20begin='0s'%20dur='0.8s'%20values='1;.5;1'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3c/circle%3e%3ccircle%20cx='60'%20cy='15'%20r='9'%20fill-opacity='0.3'%3e%3canimate%20attributeName='r'%20from='9'%20to='9'%20begin='0s'%20dur='0.8s'%20values='9;15;9'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3canimate%20attributeName='fill-opacity'%20from='0.5'%20to='0.5'%20begin='0s'%20dur='0.8s'%20values='.5;1;.5'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3c/circle%3e%3ccircle%20cx='105'%20cy='15'%20r='15'%3e%3canimate%20attributeName='r'%20from='15'%20to='15'%20begin='0s'%20dur='0.8s'%20values='15;9;15'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3canimate%20attributeName='fill-opacity'%20from='1'%20to='1'%20begin='0s'%20dur='0.8s'%20values='1;.5;1'%20calcMode='linear'%20repeatCount='indefinite'%20/%3e%3c/circle%3e%3c/svg%3e"
+<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+<svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" fill="#6A7692">
+    <circle cx="15" cy="15" r="15">
+        <animate attributeName="r" from="15" to="15"
+                 begin="0s" dur="0.8s"
+                 values="15;9;15" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="0.8s"
+                 values="1;.5;1" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+    <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+        <animate attributeName="r" from="9" to="9"
+                 begin="0s" dur="0.8s"
+                 values="9;15;9" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="0.5" to="0.5"
+                 begin="0s" dur="0.8s"
+                 values=".5;1;.5" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+    <circle cx="105" cy="15" r="15">
+        <animate attributeName="r" from="15" to="15"
+                 begin="0s" dur="0.8s"
+                 values="15;9;15" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="0.8s"
+                 values="1;.5;1" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+</svg>

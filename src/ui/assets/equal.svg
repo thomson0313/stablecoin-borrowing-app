@@ -1,1 +1,4 @@
-export default "data:image/svg+xml,%3csvg%20width='12'%20height='8'%20viewBox='0%200%2012%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%207H12'%20stroke='%23656E85'%20stroke-width='0.411791'/%3e%3cpath%20d='M11.9998%201L-0.000244141%201'%20stroke='%23656E85'%20stroke-width='0.411791'/%3e%3c/svg%3e"
+<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 7H12" stroke="#656E85" stroke-width="0.411791"/>
+<path d="M11.9998 1L-0.000244141 1" stroke="#656E85" stroke-width="0.411791"/>
+</svg>

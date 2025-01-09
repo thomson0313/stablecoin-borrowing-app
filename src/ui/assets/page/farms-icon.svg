@@ -1,1 +1,9 @@
-export default "data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M8%200.749268V0.749318L0.0833428%206.22478L3.39174%208.51352L8.00001%205.32617L8.0001%205.3259L12.6083%208.51317L15.9167%206.22504L8%200.749268ZM7.99999%207.52306V7.52339L0.0833282%2012.9988L3.39172%2015.2867L7.99999%2012.0993V12.0996L12.6083%2015.287L15.9167%2012.9985L8%207.52307L7.99999%207.52306Z'%20fill='url(%23paint0_linear_1121_2348)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1121_2348'%20x1='8'%20y1='0.749267'%20x2='8'%20y2='15.2632'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23AD00C4'/%3e%3cstop%20offset='1'%20stop-color='%23FF63D0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.749268V0.749318L0.0833428 6.22478L3.39174 8.51352L8.00001 5.32617L8.0001 5.3259L12.6083 8.51317L15.9167 6.22504L8 0.749268ZM7.99999 7.52306V7.52339L0.0833282 12.9988L3.39172 15.2867L7.99999 12.0993V12.0996L12.6083 15.287L15.9167 12.9985L8 7.52307L7.99999 7.52306Z" fill="url(#paint0_linear_1121_2348)"/>
+<defs>
+<linearGradient id="paint0_linear_1121_2348" x1="8" y1="0.749267" x2="8" y2="15.2632" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AD00C4"/>
+<stop offset="1" stop-color="#FF63D0"/>
+</linearGradient>
+</defs>
+</svg>

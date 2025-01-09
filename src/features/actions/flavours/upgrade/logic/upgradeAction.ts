@@ -4,8 +4,8 @@ import { ensureConfigTypes } from '@/domain/hooks/useWrite'
 import { getBalancesQueryKeyPrefix } from '@/domain/wallet/getBalancesQueryKeyPrefix'
 import { allowanceQueryKey } from '@/features/actions/flavours/approve/logic/query'
 import { ActionConfig, ActionContext } from '@/features/actions/logic/types'
-import { raise } from '@/utils/assert'
-import { toBigInt } from '@/utils/bigNumber'
+import { toBigInt } from '@marsfoundation/common-universal'
+import { raise } from '@marsfoundation/common-universal'
 import { UpgradeAction } from '../types'
 
 export function createUpgradeActionConfig(action: UpgradeAction, context: ActionContext): ActionConfig {
